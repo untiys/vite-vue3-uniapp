@@ -2,6 +2,7 @@
   "extends": "@vue/tsconfig/tsconfig.json",
   "compilerOptions": {
     "sourceMap": true,
+    "ignoreDeprecations":"5.0",
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"]
@@ -9,9 +10,8 @@
     "lib": ["esnext", "dom"],
     "types": ["@dcloudio/types"],
   },
-  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue","src/**/*.d.ts",
-        "./*.d.ts",
-        "./auto-imports.d.ts" ],
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue",
+        "./*.d.ts",],
   "exclude": ["node_modules"],
 }
 
